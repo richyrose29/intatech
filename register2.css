@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:500&display=swap');
+
+/* body {
+    background-image: url("Crimson\ Tide.jpg");
+}
+
+.header {
+    Font-size: 3em;
+    text-align: center;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    display: none;
+    box-shadow: none;
+    outline: none;
+
+
+}
+
+.sub-head {
+    Font-size: 15px;
+    text-align: center;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 46.5%;
+    display: none;
+    box-shadow: none;
+    outline: none;
+}
+
+
+
+.login {
+    position: absolute;
+    top: 58%;
+    left: 43%;
+    box-shadow: none;
+    outline: none;
+}
+
+.userlog {
+    border: none;
+    padding: 10px;
+    border-radius: 7px;
+    display: none;
+    box-shadow: none;
+    outline: none;
+    background-color: white;
+
+}
+
+::placeholder {
+    color: black;
+    font-family: 'Muli', sans-serif;
+    box-shadow: none;
+    outline: none;
+    font-size: 1.5em;
+
+
+}
+
+.passlog {
+
+    padding: 10px;
+    border-radius: 7px;
+    display: none;
+    box-shadow: none;
+    outline: none;
+    border: none;
+
+}
+
+.login-btn {
+    color: black;
+    border-color: white;
+    position: absolute;
+    top: 64%;
+    left: 49.5%;
+    font-family: 'Muli', sans-serif;
+    padding: 13px;
+    border-radius: 7px;
+    cursor: pointer;
+    display: none;
+    background-color: white;
+    box-shadow: none;
+    outline: none;
+    font-size: 1em;
+}
+
+$dark-blue: #222;
+$green: #90feb5;
+$action-color: $green;
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+    height: 100%;
+    animation: hue-rotate 10s linear infinite;
+}
+
+.button {
+    -webkit-font-smoothing: antialiased;
+    background-color: $dark-blue;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: none;
+    user-select: none;
+    letter-spacing: 1px;
+    color: white;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-out;
+
+    &:hover {
+        background-color: $action-color;
+        color: #fff;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+    &--bubble {
+        position: relative;
+        z-index: 2;
+        color: white;
+        background: none;
+
+        &:hover {
+            background: none;
+        }
+
+        &:hover+.button--bubble__effect-container .circle {
+            background: darken($action-color, 15%);
+        }
+
+        &:hover+.button--bubble__effect-container .button {
+            background: darken($action-color, 15%);
+        }
+
+        &:active+.button--bubble__effect-container {
+            transform: scale(0.95);
+        }
+
+        &__container {
+            position: relative;
+            display: inline-block;
+
+            .effect-button {
+                position: absolute;
+                width: 50%;
+                height: 25%;
+                top: 50%;
+                left: 25%;
+                z-index: 1;
+                transform: translateY(-50%);
+                background: $dark-blue;
+                transition: background 0.1s ease-out;
+            }
+        }
+    }
+}
+
+.button--bubble__effect-container {
+    position: absolute;
+    display: block;
+    width: 200%;
+    height: 400%;
+    top: -150%;
+    left: -50%;
+    -webkit-filter: url("#goo");
+    filter: url("#goo");
+    transition: all 0.1s ease-out;
+    pointer-events: none;
+
+    .circle {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 15px;
+        background: $dark-blue;
+        transition: background 0.1s ease-out;
+
+        &.top-left {
+            top: 40%;
+            left: 27%;
+        }
+
+        &.bottom-right {
+            bottom: 40%;
+            right: 27%;
+        }
+    }
+}
+*/
+
+* {
+    box-sizing: border-box;
+
+}
+
+div {
+    display: block;
+    height: 50%;
+    -webkit-animation: hue-rotate 10s linear infinite;
+    animation: hue-rotate 10s linear infinite;
+}
+
+
+
+.button {
+    -webkit-font-smoothing: antialiased;
+
+    border: none;
+
+    display: inline-block;
+    font-family: 'Muli', sans-serif;
+    color: #003366;
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    letter-spacing: 1px;
+    color: white;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-out;
+    cursor: pointer !important;
+
+}
+
+.button:hover {
+    background-color: #90feb5;
+    color: #fff;
+
+}
+
+.button:active {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.button--bubble {
+    position: relative;
+    z-index: 2;
+    color: #003366;
+    background: none;
+
+}
+
+.button--bubble:hover {
+    background: none;
+
+}
+
+.button--bubble:hover+.button--bubble__effect-container .circle {
+    background: #44fd82;
+}
+
+.button--bubble:hover+.button--bubble__effect-container .button {
+    background: #44fd82;
+}
+
+.button--bubble:active+.button--bubble__effect-container {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.button--bubble__container {
+    position: relative;
+    display: inline-block;
+
+
+
+}
+
+.button--bubble__container .effect-button {
+    position: absolute;
+    width: 50%;
+    height: 25%;
+    top: 50%;
+    left: 25%;
+    z-index: 1;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    transition: background 0.1s ease-out;
+    border-radius: 30px;
+}
+
+.button--bubble__effect-container {
+    position: absolute;
+    display: block;
+    width: 200%;
+    height: 400%;
+    top: -150%;
+    left: -50%;
+    -webkit-filter: url("#goo");
+    filter: url("#goo");
+    transition: all 0.1s ease-out;
+
+
+
+}
+
+.button--bubble__effect-container .circle {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+
+    transition: background 0.1s ease-out;
+
+}
+
+.button--bubble__effect-container .circle.top-left {
+    top: 40%;
+    left: 27%;
+}
+
+.button--bubble__effect-container .circle.bottom-right {
+    bottom: 40%;
+    right: 27%;
+}
+
+.goo {
+    position: absolute;
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 1vh;
+    text-align: center;
+
+
+}
+
+.button--bubble__container {
+    margin-top: 30px;
+
+
+}
+
+@-webkit-keyframes hue-rotate {
+    from {
+        -webkit-filter: hue-rotate(0);
+        -moz-filter: hue-rotate(0);
+        -ms-filter: hue-rotate(0);
+        filter: hue-rotate(0);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(360deg);
+        -moz-filter: hue-rotate(360deg);
+        -ms-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes hue-rotate {
+    from {
+        -webkit-filter: hue-rotate(0);
+        -moz-filter: hue-rotate(0);
+        -ms-filter: hue-rotate(0);
+        filter: hue-rotate(0);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(360deg);
+        -moz-filter: hue-rotate(360deg);
+        -ms-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+.header {
+
+    font-size: 2.5em;
+    padding-top: 250px;
+    font-family: 'Muli', sans-serif;
+    color: #003366;
+}
+
+.sub-header {
+
+    font-size: 1.5em;
+    font-family: 'Muli', sans-serif;
+    color: #003366;
+
+}
+
+.userlog {
+    padding: 10px;
+    border: none;
+    margin-left: 1px;
+    width: 150px;
+    font-family: 'Muli', sans-serif;
+    color: #003366;
+}
+
+.passlog {
+    padding: 10px;
+    border: none;
+    width: 150px;
+    font-family: 'Muli', sans-serif;
+    color: #003366;
+
+}
+
+::placeholder {
+    color: black;
+    font-family: 'Muli', sans-serif;
+    color: #003366;
+}
+
+.account {
+    font-family: 'Muli', sans-serif;
+    color: #003366;
+    font-size: 1em;
+    cursor: pointer !important;
+}
+
+.sign_in {
+
+    font-family: 'Muli', sans-serif;
+    color: #003366;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.alert {
+    font-family: 'Muli', sans-serif;
+    color: #003366;
+    text-decoration: none;
+    color: white;
+}
+
+.form {
+    height: 18%;
+    display: block;
+
+}
+
+
+
+.move-button {
+    top: 80%;
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+}
+
+.alert {
+    font-family: 'Muli', sans-serif;
+    color: #003366;
+}
+
+.reg {
+    padding-top: 50px;
+}
+
+.sign-up {
+    padding-top: 20px;
+}
+
+.sign-up a {
+    font-family: 'Muli', sans-serif;
+    color: #003366;
+    text-decoration: none;
+}

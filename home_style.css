@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:500&display=swap');
+
+
+body {
+
+    font-family: 'Muli', sans-serif;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+
+}
+
+.topnav {
+    overflow: hidden;
+    background: transparent;
+    margin-left: 40px;
+}
+
+.topnav a {
+    float: left;
+    color: #003366;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Muli', sans-serif;
+}
+
+.topnav a:hover {
+    background: transparent;
+    color: #42a5f5;
+}
+
+.topnav a.active {
+    background: transparent;
+    color: #42a5f5;
+}
+
+
+
+.header-container {
+    height: 1000px;
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    border-radius: 20px;
+    padding-right: 50px;
+    padding-left: 30px;
+    box-shadow: 5px 10px 18px #888888;
+
+
+}
+
+.header,
+h1,
+h2 {
+    text-align: center;
+    color: purple;
+    margin: auto;
+    padding-bottom: 10px;
+    font-family: 'Muli', sans-serif;
+
+
+}
+
+
+
+.team-img {
+    height: 18%;
+    width: 100%;
+    display: inline-block;
+    background: url(images/team.png);
+    background-position: center;
+    background-size: contain;
+    background: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+
+
+
+.welcome {
+    text-align: center;
+    padding: 30px;
+    font-family: 'Muli', sans-serif;
+    color: #003366;
+    font-size: 20px;
+
+
+}
+
+i {
+    padding: 5px;
+}
+
+#profileDisplay {
+    display: block;
+    width: 10%;
+    margin: 10px auto;
+    border-radius: 55%;
+    cursor: pointer;
+    height: 7%;
+}
+
+
+
+
+.table-div {
+
+    position: relative;
+    margin: auto;
+    width: 70%;
+    height: 320px;
+    padding-top: 20px;
+}
+
+.table {
+    width: 50%;
+    margin: auto;
+
+}
+
+.table td {
+    padding-bottom: 16px;
+}
+
+.profile-btn {
+    height: 50px;
+
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.heading-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: 80%;
+    margin: auto;
+    font-family: 'Muli', sans-serif;
+    color: #003366;
+    font-weight: bold;
+
+}
+
+.image-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+
+
+
+}
+
+.header1 {
+
+    font-size: 20px;
+}
+
+.header2 {
+
+    font-size: 20px;
+}
+
+.header3 {
+    padding-top: 35px;
+    font-size: 20px;
+}
+
+.header4 {
+    padding-top: 35px;
+    font-size: 20px;
+}
+
+.header5 {
+    padding-top: 35px;
+    font-size: 20px;
+}
+
+.header6 {
+    padding-top: 35px;
+    font-size: 20px;
+}
+
+.image1 {
+
+    padding-bottom: 150px;
+    width: 90%;
+    margin: auto;
+    background: url(images/messages.svg);
+    background-position: center;
+    background-size: contain;
+    background: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+
+
+}
+
+
+
+.image2 {
+
+    padding-bottom: 150px;
+    width: 90%;
+    margin: auto;
+    background: url(images/calendar.svg);
+    background-position: center;
+    background-size: contain;
+    background: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+}
+
+.image3 {
+
+    padding-bottom: 150px;
+    width: 90%;
+    margin: auto;
+    background: url(images/files.svg);
+    background-position: center;
+    background-size: contain;
+    background: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+}
+
+.image4 {
+
+    padding-bottom: 150px;
+    width: 90%;
+    margin: auto;
+    background: url(images/notify.svg);
+    background-position: center;
+    background-size: contain;
+    background: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+}
+
+.image5 {
+
+    padding-bottom: 150px;
+    width: 90%;
+    margin: auto;
+    background: url("/images/projects.svg");
+    background-position: center;
+    background-size: contain;
+    background: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+}
+
+.image6 {
+
+    padding-bottom: 150px;
+    width: 90%;
+    margin: auto;
+    background: url(images/settings.svg);
+    background-position: center;
+    background-size: contain;
+    background: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+}
